@@ -1,35 +1,44 @@
-// function to generate markdown for README
+// Generate markdown for README
+
+// function for badge generation
+function generateBadge(license) {
+    return `![](https://img.shields.io/static/v1?label=license&message=${license}&color=blue)`;
+}
+
+// function to generate the readme
 function generateMarkdown(data) {
     return `
-## Title 
+# Title 
 ${data.titleName}
 
-# Table of Contents
+${generateBadge(data.license)}
+
+## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contribution](#contribution)
 * [Tests](#tests)
 * [License](#license)
 
-# Description
+## Description
 ${data.description}
 
-# Installation
+## Installation
 ${data.installation}
 
-# Usage
+## Usage
 ${data.usage}
 
-# Contribution
+## Contribution
 ${data.contribution}
 
-# Tests
+## Tests
 ${data.tests}
 
-# License
+## License
 ${data.license}
 
-# Questions
+## Questions
 My GitHub Username is: ${data.githubName}, with a link to my page: https://github.com/${data.githubName} <br>
 My email is ${data.email} <br>
 `;
