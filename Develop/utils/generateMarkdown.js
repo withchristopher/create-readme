@@ -32,6 +32,6 @@ function generateMarkdown(data) {
     My GitHub Username is: ${data.githubName}, with a link to my page: https://github.com/${data.githubName} <br>
     My email is ${data.email} <br>
   `;
-}
+};
 
 module.exports = generateMarkdown;
