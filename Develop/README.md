@@ -1,6 +1,6 @@
 
 ## Title 
-t
+Readme Generator
 
 # Table of Contents
 * [Installation](#installation)
@@ -10,23 +10,23 @@ t
 * [License](#license)
 
 # Description
-t
+This generates a readme file for your application hosted on GitHub
 
 # Installation
-tt
+Install nodejs from nodejs website. Next, install inquirer npm package.
 
 # Usage
-tt
+Usage is open to all who reference origin.
 
 # Contribution
-t
+Request contribution via my email
 
 # Tests
-t
+Test in VS-Code
 
 # License
 MIT
 
 # Questions
-My GitHub Username is: t, with a link to my page: https://github.com/t <br>
-My email is t <br>
+My GitHub Username is: withchristopher, with a link to my page: https://github.com/withchristopher <br>
+My email is chmaxwel@icloud.com <br>
