@@ -1,7 +1,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./Develop/utils/generateMarkdown');
 
-// Arrow function to CLI input
+//function to CLI questions
 const promptUser = () => {
     return inquirer.prompt([{
             type: "input",
@@ -103,4 +104,29 @@ const promptUser = () => {
     ])
 };
 
-promptUser();
+// function to write README file
+function writeToFile(fileName, data) {}
+
+// function to initialize program
+const init = () => {
+    console.log(`
+    ============================
+    Welcome to creating a README 
+    ============================
+`);
+};
+
+// Initiliaze fucntion
+init();
+
+
+promptUser()
+    .then(data => {
+
+        fs.writeFile('./Develop/README.md', generateMarkdown(data), err => {
+            if (err)
+                throw new Error(err)
+
+            console.log('You have successfully created a Readme file. Go to the Develop folder to view.')
+        })
+    })
