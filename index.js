@@ -17,6 +17,20 @@ const promptUser = () => {
                 }
             }
         },
+
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "email",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Invalid email, please enter a valid email address.");
+                    return false;
+                }
+            }
+        },
         {
             type: "input",
             message: "What is the title of the project",
