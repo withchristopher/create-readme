@@ -3,8 +3,6 @@ function generateMarkdown(data) {
     return `
     #Title ${data.titleName}
 
-    ${generateBadge(data.license)}
-
     # Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
